@@ -1,0 +1,212 @@
+/* Home|Login Page StyleSheet */  
+  /* CSS */
+
+@import url("https://fonts.googleapis.com/css?family=Numans");
+
+html,body {
+  background-size: cover;
+  color:black;
+  background-repeat: no-repeat;
+  font-family: 'Numans',sans-serif;
+}
+
+.mcon {
+  height: fit-content;
+  border: none;
+  border-radius: none;
+  align-content: center;
+}
+
+#card {
+  height: 430px;
+  margin-top: 8%;
+  margin-bottom: 7%;
+  width: 400px;
+  color: black;
+  font-family: 'Bitter';
+  border-radius: 7px;
+  border: 1px solid purple;
+  box-shadow: inset -5px -5px 9px #35031e,
+               inset 5px 5px 9px #35031e;
+  background-color: rgb(240, 230, 241);
+  
+}
+
+#card-header{
+  background-color: rgb(216, 198, 218);
+  box-shadow: inset -5px -0px 9px #35031e,
+               inset 5px 0px 9px #35031e;
+  border-bottom: 3px double purple;
+  text-shadow: 1px 1px 2px black;
+}
+
+#card-footer{
+  background-color: rgb(220, 204, 223);
+  border-top: 3px double purple;
+  box-shadow: inset -5px -0px 9px #35031e,
+               inset 5px 0px 9px #35031e;
+  text-shadow: 1px 1px 1px black;
+  font-size: 17px;
+  color: black;
+}
+
+.social_icon span {
+  font-size: 60px;
+  margin-left: 10px;
+  color: #ffffff;
+}
+
+.social_icon span:hover {
+  color: 808080;
+  cursor: pointer;
+  
+}
+
+.card-header h3 {
+  color: whitesmoke;
+  font-size: 30px;
+}
+
+.social_icon {
+  position: absolute;
+  right: 20px;
+  top: -45px;
+}
+
+.input-group-prepend span {
+  width: 50px;
+  border: 2px solid;
+  background-color: #880e4f;
+  color: white;
+  box-shadow: inset -5px -0px 9px #35031e,
+               inset 5px 0px 9px #35031e;
+  
+  border-collapse: initial;
+  border: 2px solid black;
+}
+
+input:focus {
+  outline: 0 0 0 0 !important;
+  box-shadow: 3px 3px 3px  !important;
+}
+a{
+  color:white;
+  text-decoration: none;
+}
+a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.remember {
+  color: white;
+}
+
+.remember input {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.login_btn {
+  color: white;
+  background-color: #880e4f;
+  border: 2px solid black;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  font-family: 'Numans';
+  padding: 5px;
+  font-size: 18px;
+  width: 100px;
+  box-shadow: inherit 10px 10px 10px black,inherit 0px 10px 10px black;
+}
+
+.login_btn:hover {
+  color: black;
+  background-color: #5a0533;
+  box-shadow: inherit 10px 10px 10px black,inherit 0px 10px 10px black;
+}
+
+input[type=text] {
+  width: 100%;
+  font-size: 20px; 
+  font-family: 'Acme';
+  box-shadow: inset -5px -0px 9px rgba(0,0,0,0.5),
+               inset 5px 0px 9px rgba(0,0,0,0.5);
+  border: 2px solid black;
+  padding-left: 10px;
+  color: black;
+  border-radius: 5px;
+}
+
+input[type=password] {
+  width: 100%;
+  font-size: 20px; 
+  font-family: 'Acme';
+  border: 2px solid black;
+  padding-left: 10px;
+  color: black;
+  box-shadow: inset -5px -0px 9px rgba(0,0,0,0.5),
+               inset 5px 0px 9px rgba(0,0,0,0.5);
+  border-radius: 5px;
+}
+
+.links {
+  color: white;
+}
+
+.links a {
+  margin-left: 4px;
+}
+
+.mh3:hover
+{
+  padding: 2px;
+  border-radius: 5px;
+  color:white;
+  font-weight: bold;
+  font-family:'PT serif';
+}
+
+.mnav ul li a:hover{
+  color:black;
+  padding: 2px;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: black;
+}
+
+#progress{
+  background-color: #b1025f;
+  height: 8px;
+  border-bottom: 1px solid black;
+  width: 0;
+  z-index: 99999;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 1px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b1025f; 
+  border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #490228; 
+}

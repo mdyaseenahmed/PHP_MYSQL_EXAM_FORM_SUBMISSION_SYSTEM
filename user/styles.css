@@ -1,0 +1,517 @@
+/* CSS Document */
+/*
+ * Base structure
+ */
+@import url('https://fonts.googleapis.com/css?family=Acme|Zilla+Slab:wght@500|Crimson+Text:wght@700|Bree+Serif|Patrick+Hand|Volkhov|Handlee|PT+Serif|Numans|Bitter|Odibee+Sans|Simonetta|Trade+Winds&display=swap');
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+}
+
+
+/*
+  * Global add-ons
+  */
+
+.sub-header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/*
+  * Top navigation
+  * Hide default border to remove 1px line.
+  */
+.navbar-fixed-top {
+    border: 5px solid black;
+    margin-top: auto;
+    z-index: 1000000;
+    top: 0;
+    text-decoration: none;
+    width: 100%;
+    position: fixed;
+    background-color: #454545;
+}
+
+.navbar-fixed-top ul li a {
+    font-size: 22px;
+}
+
+.navbar-fixed-top ul li a:hover {
+    text-decoration: none;
+    color: red;
+    font-size: 25px;
+}
+
+/* Hide for mobile, show later */
+.sidebar {
+    display: none;
+}
+
+.navbar-right ul li a:hover {
+    display: black;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: fixed;
+        top: 51px;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        display: block;
+        padding: 20px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        /* Scrollable contents if viewport is shorter than content. */
+        background-color: #454545;
+
+        border-right: 5px solid black;
+    }
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        position: fixed;
+        top: 51px;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        display: block;
+        padding: 20px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        /* Scrollable contents if viewport is shorter than content. */
+        background-color: #454545;
+
+        border-right: 5px solid black;
+    }
+}
+
+
+.mconul {
+    padding: 0;
+    display: block;
+}
+
+.dropbtn {
+    background-color: #454545;
+    padding-left: 1px;
+    color: black;
+    padding: 1px;
+    font-size: 18px;
+    width: 100%;
+    font-family: 'Acme';
+    height: fit-content;
+    width: fit-content;
+    border: none;
+}
+
+.dropdown {
+    height: fit-content;
+    width: fit-content;
+    margin-left: 0%;
+    position: relative;
+    color: wheat;
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.msubs:hover {
+    color: wheat;
+    font-size: 15px;
+    background-color: #454545;
+    ;
+}
+
+.msubs:after {
+    border: none;
+    font-size: 15px;
+    background-color: #454545;
+    ;
+}
+
+.dropdown a:hover {
+    font-size: 18px;
+    font-family: 'Handlee';
+    text-decoration: none;
+    width: 100%;
+    padding: 0;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.w3-dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    padding-left: 5px;
+    border-radius: 5px;
+    background-color: #454545;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.w3-dropdown-content a {
+    color: black;
+    padding: 0;
+    text-decoration: none;
+    width: 100%;
+    font-size: 15px;
+    ;
+    display: block;
+
+}
+
+.w3-dropdown-content a:hover {
+    background-color: #252525;
+    border-radius: 5px;
+    border: 3px solid black;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.w3-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.mside ul li a:hover {
+    font-size: 15px;
+    font-family: 'PT serif';
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    color: wheat;
+    background-color: #454545;
+
+}
+
+.mbtn:hover {
+    color: wheat;
+    width: 100%;
+    cursor: pointer;
+    background-color: #454545;
+    font-size: 15px;
+}
+
+.mside ul li {
+    font-size: 16px;
+    font-family: 'PT seriffffffff';
+}
+
+.mside ul li:hover {
+    font-size: 16px;
+    font-family: 'Bitter';
+}
+
+/*
+  * Main content
+  */
+
+.main {
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .main {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+
+.main .page-header {
+    margin-top: 0;
+}
+
+
+/*
+  * Placeholder dashboard ideas
+  */
+
+.placeholders {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.placeholders h4 {
+    margin-bottom: 0;
+}
+
+.placeholder {
+    margin-bottom: 20px;
+}
+
+.placeholder img {
+    display: inline-block;
+    border-radius: 50%;
+}
+
+
+.section {
+
+    width: 100%;
+
+}
+
+.section .section-title .title {
+    margin-top: 0;
+}
+
+.section .section-title .sub-title {
+    color: #767676;
+}
+
+/*--------------------------------------------------------------
+ # DASHBOARD STATS
+ --------------------------------------------------------------*/
+.dashboard-stat {
+    display: block;
+    background-color: #AF7AC5;
+    padding: 30px 20px;
+    text-align: right;
+    position: relative;
+    color: black;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+    border: 3px solid black;
+    border-radius: 4px;
+}
+
+.dashboard-stat .name {
+    font-size: 18px;
+    line-height: 15px;
+    font-weight: bold;
+    color: black;
+    font-family: 'PT serif';
+    background-color: transparent;
+}
+
+.dashboard-stat .number {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    font-family: 'PT Serif';
+    display: block;
+}
+
+.dashboard-stat .bg-icon {
+    position: absolute;
+    font-size: 80px;
+    opacity: 0.2;
+    left: 0;
+    bottom: 0;
+}
+
+.dashboard-stat:hover {
+    background-color: #7D3C98;
+    color: white;
+    text-decoration: none;
+    border: 2px solid black;
+    box-shadow: 5px 15px 15px black, -5px -5px 15px black, -5px 15px 15px black, 5px -5px 15px black;
+}
+
+.dashboard-stat-2 {
+    display: block;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+}
+
+.dashboard-stat-2 .stat-content {
+    padding: 20px 15px 15px;
+    text-align: center;
+    position: relative;
+}
+
+.dashboard-stat-2 .number {
+    font-size: 28px;
+    display: block;
+}
+
+.dashboard-stat-2 .stat-footer {
+    background: #fff;
+    color: #292929;
+    text-align: center;
+    display: block;
+    padding: 8px;
+    font-size: 90%;
+}
+
+.dashboard-stat-2:hover {
+    background: #292929 !important;
+}
+
+@media (max-width: 768px) {
+    .dashboard-stat {
+        margin-bottom: 10px;
+    }
+
+    .dashboard-stat-2 {
+        margin-bottom: 10px;
+    }
+}
+
+.dashboard-stat1 {
+    display: block;
+    background-color: rgb(243, 43, 83);
+    padding: 30px 20px;
+    color: black;
+    text-align: right;
+    position: relative;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+    border: 3px solid black;
+    border-radius: 4px;
+}
+
+
+.dashboard-stat1 .name {
+    font-size: 18px;
+    color: black;
+    line-height: 15px;
+    font-weight: bold;
+    font-family: 'PT serif';
+    background-color: transparent;
+}
+
+.dashboard-stat1 .number {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    font-family: 'PT Serif';
+    display: block;
+}
+
+.dashboard-stat1 .bg-icon {
+    position: absolute;
+    font-size: 80px;
+    opacity: 0.2;
+    left: 0;
+    bottom: 0;
+}
+
+.dashboard-stat1:hover {
+    background-color: rgb(206, 15, 53);
+    color: wheat;
+    text-decoration: none;
+    border: 2px solid black;
+    box-shadow: 5px 15px 15px black, -5px -5px 15px black, -5px 15px 15px black, 5px -5px 15px black;
+}
+
+.dashboard-stat11 {
+    display: block;
+    background-color: #3498DB;
+    padding: 30px 20px;
+    text-align: right;
+    position: relative;
+    color: black;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+    border: 3px solid black;
+    border-radius: 4px;
+}
+
+.dashboard-stat11 .name {
+    font-size: 18px;
+    line-height: 15px;
+    font-weight: bold;
+    color: black;
+    font-family: 'PT serif';
+    background-color: transparent;
+}
+
+.dashboard-stat11 .number {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    font-family: 'PT Serif';
+    display: block;
+}
+
+.dashboard-stat11 .bg-icon {
+    position: absolute;
+    font-size: 80px;
+    opacity: 0.2;
+    left: 0;
+    bottom: 0;
+}
+
+.dashboard-stat11:hover {
+    background-color: #2874A6;
+    color: white;
+    text-decoration: none;
+    border: 2px solid black;
+    box-shadow: 5px 15px 15px black, -5px -5px 15px black, -5px 15px 15px black, 5px -5px 15px black;
+}
+
+#progress {
+    background-color: #b1025f;
+    height: 8px;
+    width: 0;
+    border-bottom: 1px solid black;
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 1px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #4b0141;
+    border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #490228;
+}
+
+.login_btn {
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Bitter';
+    padding: 5px;
+    background-color: rgb(32, 194, 67);
+    font-size: 18px;
+    width: 50%;
+}
+
+.login_btn:hover {
+    color: whitesmoke;
+    background-color: rgb(17, 104, 36);
+    box-shadow: 4px 4px 4px black;
+}
+
+.reset_btn {
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Bitter';
+    padding: 5px;
+    background-color: gray;
+    font-size: 18px;
+    width: 50%;
+}
+
+.reset_btn:hover {
+    color: white;
+    background-color: rgb(21, 36, 36);
+    box-shadow: 4px 4px 4px black;
+}

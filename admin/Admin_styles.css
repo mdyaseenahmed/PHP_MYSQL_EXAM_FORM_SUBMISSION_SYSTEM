@@ -1,0 +1,265 @@
+/*Admin Page Styles.css */
+
+@import url('https://fonts.googleapis.com/css?family=Acme|Della+Respira|Roboto|Elsie|Bree+Serif|Patrick+Hand|Volkhov|Handlee|PT+Serif|Numans|Bitter|Odibee+Sans|Simonetta|Trade+Winds&display=swap');
+
+
+html,body{
+  background-color: rgb(253, 241, 255) !important;
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.mh1{
+    font-family: 'Bitter';
+    margin-top: 2%;
+    margin-bottom: auto;
+    text-decoration: underline;
+    text-decoration-color: rgb(2, 66, 85);
+    text-decoration-style: dashed;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(252, 164, 133,0.6);
+}
+
+.forms{
+    width: fit-content;
+    height: fit-content;
+    box-shadow: -2px -2px 9px rgba(0,0,0,0.5),
+                5px 5px 9px rgba(0,0,0,0.5);
+    background-color: rgb(250, 249, 250) !important;
+    margin-left: auto;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-right: auto;
+    display : block;
+    align-content: center;
+    justify-content: flex-start;
+    background: rgba(0, 0, 0, 0.5);
+    background: transparent;
+}
+
+@keyframes mymove{
+    0%   {background-image: linear-gradient(to top right,rgb(174, 221, 250),white,rgb(238, 218, 181));}
+  25%  {background-image: linear-gradient(to top left,rgb(174, 220, 238),white,rgb(238, 219, 185));}
+  50%  {background-image: linear-gradient(to bottom left,rgb(175, 219, 236),white,rgb(238, 222, 194));}
+  75%  {background-image: linear-gradient(to top bottom,rgb(175, 219, 236),white,rgb(238, 222, 194));}
+  100% {background-image: linear-gradient(to bottom right,rgb(177, 217, 233),white,rgb(238, 224, 197));}
+}
+
+.myform{
+    /*animation: mymove 2s infinite;*/
+    padding:40px;
+    border-radius: 5px; 
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(82, 66, 85,0.2);
+}
+
+input[type=email] {
+    width: 100%;
+    height: 40px;   
+    font-size: 20px;
+    font-family: 'Bitter';
+    box-sizing: border-box;
+    border: 2px solid black;
+    background-color:  #f3bee1;
+    padding-left: 5px;
+    color: black;
+    border-radius: 5px;
+  }
+
+  input[type=password] {
+    width: 100%;
+    height: 40px;   
+    font-size: 20px;
+    font-family: 'Bitter';
+    box-sizing: border-box;
+    border: 2px solid black;
+    background-color: #f3bee1;
+    padding-left: 5px;
+    color: black;
+    border-radius: 5px;
+  }
+
+  input[placeholder]
+  {
+      text-align: center;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    margin-top: 8%;    
+    font-family: 'Bitter';
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 2px solid black;
+    background-color:  rgb(6, 202, 49);
+    padding-left: 5px;
+    height: 50px;   
+    font-size: 26px;
+    color: black;
+    border-radius: 5px;
+  }
+
+  input[type=reset] {
+    width: 100%;
+    text-align: center;
+    height: 50px;   
+    font-size: 26px;
+    margin-top: 4%;    
+    font-family: 'Bitter';
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 2px solid black;
+    background-color: rgb(92, 94, 95);
+    padding-left: 5px;
+    color: black;
+    border-radius: 5px;
+  }
+
+  .input-group-prepend span {
+    width: 50px;
+    border: 2px solid;
+    background-color: #880e4f;
+    color: black;
+    height: 40px;
+    border-collapse: inherit;
+    border: 2px solid black;
+  }
+  
+  .login_btn {
+    color: black;
+    border: 2px solid;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Numans';
+    padding: 5px;
+    font-size: 18px;
+    width: 100%;
+  }
+  
+  .login_btn:hover {
+    color: whitesmoke;
+    background-color:rgb(28, 172, 59);
+    box-shadow: 10px 10px 10px black;
+  }
+
+  .reset_btn
+  {
+    color: black;
+    border: 2px solid;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Numans';
+    padding: 5px;
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .reset_btn:hover{
+    color: wheat;
+    background-color: darkslategray;
+    box-shadow: 10px 10px 10px black;
+  }
+
+.mh3:hover
+{
+  border: 2px solid black;
+  padding: 5px;
+  font-family: 'Bitter';
+  border-radius: 5px;
+  color:white;
+  background-color: black;
+}
+
+input[type=text] {
+  width: 100%;
+  margin: 1%;
+  height: 40px;   
+  font-size: 20px; 
+  font-family: 'Acme';
+  box-sizing: border-box;
+  border: 2px solid black;
+  background-color: rgb(205, 243, 243);
+  padding-left: 5px;
+  color: black;
+  border-radius: 5px;
+}
+
+label.required{
+  color: black;
+  margin: 1%; 
+  width: 100%;
+  text-align: left;
+  font-size: 25px;
+  font-family: 'Della Respira';  
+}
+
+.label1{
+  color: black;
+  text-align:center;
+  width: 100%;
+  font-size: 25px;
+  font-family: 'Della Respira';  
+}
+
+.label.required{
+  position:relative;
+}
+
+.label.required:after{
+   content: '*';
+   margin-left: 4px;
+   font-family: 'Bitter';
+   color: #b90000;
+}
+input{
+  caret-color:red;
+}
+
+.select1 {
+  width: 100%;
+  margin: 1%;
+  height: 40px;   
+  font-size: 20px;    
+  font-family: 'Acme';
+  box-sizing: border-box;
+  border: 2px solid black;
+  background-color:  rgb(205, 243, 243);
+  padding-left: 5px;
+  color: black;
+  border-radius: 5px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 1px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b1025f; 
+  border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #490228; 
+}
+
+#progress{
+  background-color: #b1025f;
+  height: 8px;
+  width: 0;
+  z-index: 99999;
+  position: fixed;
+  top: 0;
+  left: 0;
+}

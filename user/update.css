@@ -1,0 +1,376 @@
+/*Registration Styles.*/
+
+@import url('https://fonts.googleapis.com/css?family=Acme|Bree+Serif|Patrick+Hand|Volkhov|Handlee|PT+Serif|Numans|Bitter|Odibee+Sans|Simonetta|Trade+Winds&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(246, 231, 248);
+    color: rgb(1, 82, 82);
+}
+
+.mcontainer {
+    width: 50%;
+    height: fit-content;
+    margin-left: auto;
+    margin-top: 2%;
+    margin-bottom: auto;
+    margin-right: auto;
+    display: flex;
+    padding: 10px;
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5),
+        3px 3px 6px rgba(0, 0, 0, 0.5);
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1px;
+    text-align: left;
+    font-size: 23px;
+    font-family: 'Acme';
+    background-color: rgb(246, 231, 248);
+    margin-bottom: 5%;
+}
+
+.myform {
+    margin-top: auto;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    font-size: 23px;
+    font-family: 'Acme';
+    color: black;
+    text-align: center;
+    margin-bottom: auto;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+label {
+    color: black;
+    margin: 1%;
+    width: 100%;
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'PT Serif';
+}
+
+.label.required {
+    position: relative;
+}
+
+.label.required:after {
+    content: '*';
+    margin-left: 4px;
+    font-family: 'Odibee';
+    color: #b90000;
+}
+
+input[type=text] {
+    width: 100%;
+    margin: 1%;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Acme';
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    padding-left: 5px;
+    background-color: transparent;
+    color: black;
+    outline: none;
+}
+
+input[type=date] {
+    width: 100%;
+    margin: 1%;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Acme';
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    padding-left: 5px;
+    color: black;
+    background-color: transparent;
+    outline: none;
+    text-align: center;
+}
+
+.radio1 {
+    width: 100%;
+    margin: 1%;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Acme';
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    padding-left: 5px;
+    color: black;
+    background-color: transparent;
+    outline: none;
+    text-align: center;
+}
+
+input[type=file] {
+    width: 100%;
+    margin: 1%;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Acme';
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    padding-left: 5px;
+    color: black;
+    outline: none;
+    text-align: center;
+    background-color: transparent;
+}
+
+.select1 {
+    width: 100%;
+    margin: 1%;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Acme';
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    padding-left: 5px;
+    background-color: transparent;
+    text-align: center;
+    outline: none;
+    color: black;
+}
+
+.select12 {
+    width: 100%;
+    margin: 1%;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Acme';
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    padding-left: 5px;
+    color: black;
+    outline: none;
+    text-align: center;
+    background-color: transparent;
+}
+
+
+input[type=number] {
+    width: 100%;
+    margin: 1%;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Acme';
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    padding-left: 5px;
+    color: black;
+    padding-left: 5px;
+    outline: none;
+    text-align: center;
+    background-color: transparent;
+}
+
+input[type=email] {
+    width: 100%;
+    margin: 1%;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Acme';
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    padding-left: 5px;
+    color: black;
+    background-color: transparent;
+    outline: none;
+    text-align: center;
+}
+
+input[type=phone] {
+    width: 100%;
+    margin: 1%;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Acme';
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    padding-left: 5px;
+    color: black;
+    outline: none;
+    background-color: transparent;
+    text-align: center;
+}
+
+input[type=password] {
+    width: 100%;
+    margin: 1%;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Acme';
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    padding-left: 5px;
+    color: black;
+    background-color: transparent;
+    text-align: center;
+    outline: none;
+}
+
+::placeholder {
+    text-align: center;
+    align-items: center;
+    font-size: 24px;
+    justify-content: center;
+    color: rgb(116, 115, 115);
+}
+
+input[type=submit] {
+    width: 100%;
+    margin-top: 8%;
+    margin-bottom: 4%;
+    font-family: 'Bree Serif';
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 2px solid black;
+    background-color: rgb(28, 172, 59);
+    padding-left: 5px;
+    height: 50px;
+    font-size: 24px;
+    color: black;
+    border-radius: 5px;
+}
+
+input[type=reset] {
+    width: 60%;
+    text-align: center;
+    height: 50px;
+    font-size: 24px;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    font-family: 'Bree Serif';
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 2px solid black;
+    background-color: rgb(92, 94, 95);
+    padding-left: 5px;
+    color: black;
+    border-radius: 5px;
+}
+
+hr {
+    padding: 0px;
+    height: 2px;
+    border: none;
+    background: black;
+}
+
+.tit {
+    color: rgb(68, 4, 39);
+    font-family: 'Bree Serif';
+    text-shadow: 1px 1px 2px black;
+}
+
+.login_btn {
+    color: black;
+    border: 2px solid;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Numans';
+    padding: 5px;
+    font-size: 18px;
+    width: 100px;
+}
+
+.login_btn:hover {
+    color: whitesmoke;
+    background-color: rgb(28, 172, 59);
+    box-shadow: 10px 10px 10px black;
+}
+
+.reset_btn {
+    color: black;
+    border: 2px solid;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Numans';
+    padding: 5px;
+    font-size: 18px;
+    width: 100px;
+}
+
+.reset_btn:hover {
+    color: wheat;
+    background-color: darkslategray;
+    box-shadow: 10px 10px 10px black;
+}
+
+#progress {
+    background-color: #b1025f;
+    height: 8px;
+    width: 0;
+    border-bottom: 1px solid black;
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 1px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #b1025f;
+    border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #490228;
+}
